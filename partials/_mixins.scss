@@ -1,32 +1,32 @@
 // == HEADINGS ==
 @mixin main-heading {
-    font-size: 90px;
+    font-size: 5.625rem;
     font-weight: 900;
     color: $black;
 }
 
 @mixin sub-heading {
-    font-size: 84px;
+    font-size: 5.25rem;
     font-weight: 700;
 }
 
 // == PARAGRAPHS ==
 @mixin text-xlarge {
-    font-size: 38px;
+    font-size: 2.375rem;
 }
 
 @mixin text-large {
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 @mixin text-medium-large {
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 @mixin text-medium {
-    font-size: 27px;
+    font-size: 1.6875rem;
 }
 
 @mixin text-small {
-    font-size: 26px;
+    font-size: 1.625rem;
 }
