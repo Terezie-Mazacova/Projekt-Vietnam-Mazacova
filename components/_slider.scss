@@ -1,0 +1,46 @@
+// == SLIDER ==
+.splide__slide {
+    width: unset !important;
+}
+
+// == SLIDER - ARROWS ==
+.splide__arrow {
+    display: flex !important;
+    gap: 11px;
+    top: 60%;
+    background: transparent;
+
+    .custom-arrow__icon {
+        display: flex;
+        background-color: $white;
+        padding: 14px;
+        border-radius: 100%;
+        box-shadow: 5px 0 7px rgba($black, 0.16);
+    
+        .custom-arrow__svg {
+            width: 23px;
+            height: 23px;
+            color: $fresh-green;
+        }
+    }
+
+
+    .custom-arrow__text {
+        font-weight: 400;
+        @include text-small;
+        line-height: 37px;
+        color: green !important;
+        white-space: nowrap;
+        background-color: $white;
+        border-radius: 56px;
+        padding: 12px 23px 11px 26px;
+    }
+}
+
+.splide__arrow--next {
+    right: 190px;
+}
+
+.splide__arrow--prev {
+    left: 100px;
+}
