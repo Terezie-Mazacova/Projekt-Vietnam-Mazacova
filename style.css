@@ -42,15 +42,17 @@
 
 .intro-section {
   display: flex;
-  padding: 100px;
+  padding-top: 68px;
+  padding-bottom: 61px;
 }
 .intro-section .left {
   width: 50%;
   position: relative;
+  padding-left: 35px;
 }
 .intro-section .left .intro-img {
   z-index: -1;
-  margin-top: -134px;
+  margin-top: -160px;
   margin-left: 80px;
   width: 100%;
 }
@@ -65,7 +67,7 @@
   padding: 8px 54px 13px 21px;
   border-radius: 12px;
   position: absolute;
-  top: 0;
+  top: 2%;
   right: 0;
 }
 .intro-section .left .trip-info .trip-duration {
@@ -157,11 +159,14 @@
   top: 20%;
   right: 0;
 }
-.intro-section .right .intro-text {
+.intro-section .right .right-container-padding {
+  padding-right: 207px;
+}
+.intro-section .right .right-container-padding .intro-text {
   display: flex;
   align-items: flex-end;
 }
-.intro-section .right .intro-text h1 {
+.intro-section .right .right-container-padding .intro-text h1 {
   font-size: 5.625rem;
   font-weight: 900;
   color: #000000;
@@ -171,7 +176,7 @@
   color: #000000;
   margin-left: 31px;
 }
-.intro-section .right .intro-text h2 {
+.intro-section .right .right-container-padding .intro-text h2 {
   font-size: 5.25rem;
   font-weight: 700;
   line-height: 112px;
@@ -180,12 +185,12 @@
   text-shadow: 0px 16px 21px rgba(0, 0, 0, 0.16);
   font-family: "Roboto", serif;
 }
-.intro-section .right .text-block {
+.intro-section .right .right-container-padding .text-block {
   border-left: 4px solid #0D9206;
   padding-left: 36.5px;
   margin-bottom: 68px;
 }
-.intro-section .right .text-block .description {
+.intro-section .right .right-container-padding .text-block .description {
   font-size: 1.75rem;
   line-height: 40px;
   font-weight: 400;
@@ -194,7 +199,7 @@
   margin-top: 5px;
   margin-bottom: 39px;
 }
-.intro-section .right .text-block .cta {
+.intro-section .right .right-container-padding .text-block .cta {
   display: inline-block;
   font-size: 1.6875rem;
   line-height: 39px;
@@ -205,38 +210,36 @@
   padding: 11px 44px;
   transition: background-color 0.3s;
 }
-.intro-section .right .text-block .cta:hover {
+.intro-section .right .right-container-padding .text-block .cta:hover {
   opacity: 80%;
 }
-
-.more-trips {
+.intro-section .more-trips {
   position: absolute;
-  bottom: 30%;
-  left: 7%;
+  bottom: 26%;
+  left: 2.8%;
   display: flex;
   align-items: center;
   gap: 27px;
   cursor: pointer;
 }
-.more-trips .more-trips-icon {
+.intro-section .more-trips .more-trips-icon {
   display: flex;
   padding: 17px;
   background-color: #FFFFFF;
   border-radius: 100%;
   box-shadow: 0 7px 20px rgba(0, 0, 0, 0.16);
 }
-.more-trips .more-trips-icon .trips-icon-svg {
+.intro-section .more-trips .more-trips-icon .trips-icon-svg {
   width: 26px;
   height: 26px;
   color: #789376;
 }
-.more-trips .more-trips-text {
+.intro-section .more-trips .more-trips-text {
   font-weight: 400;
   font-size: 1.625rem;
   line-height: 37px;
   color: #789376;
 }
-
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
@@ -245,7 +248,7 @@
     transform: translateY(-5px);
   }
 }
-.trips-icon-svg {
+.intro-section .trips-icon-svg {
   animation: bounce 1s infinite;
 }
 

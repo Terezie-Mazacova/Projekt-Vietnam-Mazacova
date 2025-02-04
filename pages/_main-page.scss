@@ -1,17 +1,19 @@
 // == INTRO SECTION ==
 .intro-section {
     display: flex;
-    padding: 100px;
+    padding-top: 68px;
+    padding-bottom: 61px;
 
     // == LEFTSIDE ==
     .left {
         width: 50%;
         position: relative;
+        padding-left: 35px;
 
         .intro-img {
             z-index: -1;
 
-            margin-top: -134px;
+            margin-top: -160px;
             margin-left: 80px;
             width: 100%;
         }
@@ -28,7 +30,7 @@
             padding: 8px 54px 13px 21px;
             border-radius: $radius-12;
             position: absolute;
-            top: 0;
+            top: 2%;
             right: 0;
 
             .trip-duration {
@@ -142,89 +144,94 @@
             right: 0;
         }
 
-
-        .intro-text {
-            display: flex;
-            align-items: flex-end;
-
-            h1 {
-                @include main-heading;
-                width: 317px;
-                text-shadow: 0px 16px 21px rgba($black, 0.16);
-                color: $black;
-                margin-left: 31px;
+        .right-container-padding {
+            padding-right: 207px;
+            
+            .intro-text {
+                display: flex;
+                align-items: flex-end;
+    
+    
+                h1 {
+                    @include main-heading;
+                    width: 317px;
+                    text-shadow: 0px 16px 21px rgba($black, 0.16);
+                    color: $black;
+                    margin-left: 31px;
+                }
+    
+                h2 {
+                    @include sub-heading;
+                    margin-bottom: -7px;
+                    color: $fresh-green;
+                    text-shadow: 0px 16px 21px rgba($black, 0.16);
+                    font-family: "Roboto", serif;
+                }
             }
-
-            h2 {
-                @include sub-heading;
-                margin-bottom: -7px;
-                color: $fresh-green;
-                text-shadow: 0px 16px 21px rgba($black, 0.16);
-                font-family: "Roboto", serif;
-            }
-        }
-
-        .text-block {
-            border-left: 4px solid $fresh-green;
-            padding-left: 36.5px;
-            margin-bottom: 68px;
-
-            .description {
-                @include text-medium-large;
-                font-weight: 400;
-                color: $steel-gray;
-                max-width: 665px;
-                margin-top: 5px;
-                margin-bottom: 39px;
-            }
-
-            .cta {
-                @include main-btn;
+    
+            .text-block {
+                border-left: 4px solid $fresh-green;
+                padding-left: 36.5px;
+                margin-bottom: 68px;
+    
+                .description {
+                    @include text-medium-large;
+                    font-weight: 400;
+                    color: $steel-gray;
+                    max-width: 665px;
+                    margin-top: 5px;
+                    margin-bottom: 39px;
+                }
+    
+                .cta {
+                    @include main-btn;
+                }
             }
         }
     }
-}
 
-.more-trips {
-    position: absolute;
-    bottom: 30%;
-    left: 7%;
-
-    display: flex;
-    align-items: center;
-    gap: 27px;
-    cursor: pointer;
-
-    .more-trips-icon {
+    .more-trips {
+        position: absolute;
+        bottom: 26%;
+        left: 2.8%;
+    
         display: flex;
-        padding: 17px;
-        background-color: $white;
-        border-radius: 100%;
-        box-shadow: 0 7px 20px rgba($black, 0.16);
-
-        .trips-icon-svg {
-            width: 26px;
-            height: 26px;
+        align-items: center;
+        gap: 27px;
+        cursor: pointer;
+    
+        .more-trips-icon {
+            display: flex;
+            padding: 17px;
+            background-color: $white;
+            border-radius: 100%;
+            box-shadow: 0 7px 20px rgba($black, 0.16);
+    
+            .trips-icon-svg {
+                width: 26px;
+                height: 26px;
+                color: $olive-gray;
+            }
+        }
+        
+        .more-trips-text {
+            font-weight: 400;
+            @include text-small;
             color: $olive-gray;
         }
     }
     
-    .more-trips-text {
-        font-weight: 400;
-        @include text-small;
-        color: $olive-gray;
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-5px);
+        }
+    }
+    
+    .trips-icon-svg {
+        animation: bounce 1s infinite;
     }
 }
 
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-5px);
-    }
-}
-
-.trips-icon-svg {
-    animation: bounce 1s infinite;
-}
