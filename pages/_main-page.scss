@@ -65,6 +65,7 @@
                 text-decoration: none;
                 position: relative;
                 transition: background-color 0.6s;
+                border-radius: 6rem;
 
                 .social-icon {
                     display: flex;
@@ -90,12 +91,11 @@
                 &:hover {
                     background-color: $olive-gray;
                     box-shadow: .3125rem .875rem .9375rem rgba($black, 0.16);
-                    border-radius: 6rem;
                     width: 14.875rem;
                 }
 
                 &:hover .social-icon {
-                    border: none;
+                    border-color: transparent;
                 }
 
                 &:hover .icon {
