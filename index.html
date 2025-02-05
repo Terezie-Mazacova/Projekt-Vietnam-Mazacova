@@ -47,8 +47,13 @@
         <!-- INTRO SECTION -->
         <section>
             <div class="intro-section">
-                <div class="left">
-                    <img src="./img/main-page/Group 8.png" alt="Intro Image" class="intro-img">
+
+                <!-- LEFT SIDE -->
+                <div class="left hidden">
+                    <div class="intro-img-container">
+                        <img src="./img/main-page/Scroll Group 1.png" alt="Intro Image" class="intro-img">
+                    </div>
+                    
 
                     <div class="trip-info">
                         <p class="trip-duration">2 Days</p>
@@ -57,34 +62,43 @@
 
                     <div class="social-icons">
                         <a href="https://www.facebook.com/" target="_blank" class="social-link social-link--margin-30">
-                            <div class="social-icon social-icon--facebook">
-                                <img src="./img/icons/Icon awesome-facebook-f.svg" alt="Facebook Logo" class="icon">
+                            <div class="social-icon">
+                                <img src="./img/icons/Facebook.svg" alt="Facebook Logo" class="icon">
                             </div>
                             
                             <span class="social-text">Facebook</span>
                         </a>
 
                         <a href="https://x.com/?lang=cs" target="_blank" class="social-link social-link--margin-56">
-                            <div class="social-icon social-icon--twitter">
-                                <img src="./img/icons/Icon metro-twitter.svg" alt="Twitter Logo" class="icon">
+                            <div class="social-icon">
+                                <img src="./img/icons/Twitter.svg" alt="Twitter Logo" class="icon">
                             </div>
                             
                             <span class="social-text">Twitter</span>
                         </a>
 
                         <a href="#" target="_blank" class="social-link">
-                            <div class="social-icon social-icon--share">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="icon social-icon-svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
-                                </svg>
+                            <div class="social-icon">
+                                <img src="./img/icons/Share.svg" alt="Share Logo" class="icon">
                             </div>
                             
                             <span class="social-text">To Share</span>
                         </a>
                     </div>
+
+                    <div class="more-trips more-trips-desktop">
+                        <div class="more-trips-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="trips-icon-svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                            </svg>
+                        </div>
+        
+                        <p class="more-trips-text">More Short Trips</p>
+                    </div>
                 </div>
 
-                <div class="right">
+                <!-- RIGHT SIDE -->
+                <div class="right hidden">
                     <img src="./img/main-page/Repeat Grid 11.png" alt="Abstract Motive" class="abstract-motive">
                     <div class="right-container-padding">
                         <div class="intro-text">
@@ -150,17 +164,19 @@
                             </button>
                         </div>
                     </div>
+
+                    <div class="more-trips more-trips--mobile">
+                        <div class="more-trips-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="trips-icon-svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                            </svg>
+                        </div>
+        
+                        <p class="more-trips-text">More Short Trips</p>
+                    </div>
                 </div>
 
-                <div class="more-trips">
-                    <div class="more-trips-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="trips-icon-svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
-                        </svg>
-                    </div>
-    
-                    <p class="more-trips-text">More Short Trips</p>
-                </div>
+                
             </div>            
         </section>
     </main>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-Share">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="Share" clip-path="url(#clip-Share)">
+    <path id="Path_8" data-name="Path 8" d="M7.217,10.907a2.25,2.25,0,1,0,0,2.186m0-2.186a2.252,2.252,0,0,1,0,2.186m0-2.186,9.566-5.314m-9.566,7.5,9.566,5.314m0,0a2.251,2.251,0,1,0,3.061-.875,2.251,2.251,0,0,0-3.061.875Zm0-12.814a2.25,2.25,0,1,0,.874-3.059,2.249,2.249,0,0,0-.874,3.059Z" transform="translate(3.999 3.999)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

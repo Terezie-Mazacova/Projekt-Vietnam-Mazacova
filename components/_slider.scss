@@ -6,20 +6,20 @@
 // == SLIDER - ARROWS ==
 .splide__arrow {
     display: flex !important;
-    gap: 11px;
+    gap: .6875rem;
     top: 60%;
     background: transparent;
 
     .custom-arrow__icon {
         display: flex;
         background-color: $white;
-        padding: 14px;
+        padding: .875rem;
         border-radius: 100%;
-        box-shadow: 5px 0 7px rgba($black, 0.16);
+        box-shadow: .3125rem 0 .4375rem rgba($black, 0.16);
     
         .custom-arrow__svg {
-            width: 23px;
-            height: 23px;
+            width: 1.4375rem;
+            height: 1.4375rem;
             color: $fresh-green;
         }
     }
@@ -28,19 +28,34 @@
     .custom-arrow__text {
         font-weight: 400;
         @include text-small;
-        line-height: 37px;
+        line-height: 2.3125rem;
         color: green !important;
         white-space: nowrap;
         background-color: $white;
-        border-radius: 56px;
-        padding: 12px 23px 11px 26px;
+        border-radius: 3.5rem;
+        padding: .75rem 1.4375rem .6875rem 1.625rem;
     }
 }
 
 .splide__arrow--next {
-    right: 190px;
+    right: 11.875rem;
 }
 
 .splide__arrow--prev {
-    left: 100px;
+    left: 6.25rem;
+}
+
+// == BREAKPOINTY ==
+@media screen and (max-width: 767px) {
+    .custom-arrow__text {
+        display: none;
+    }
+
+    .splide__arrow--next {
+        right: 2.8125rem;
+    }
+
+    .splide__arrow--prev {
+        left: 2.5rem;
+    }
 }

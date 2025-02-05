@@ -5,13 +5,8 @@ document.addEventListener('DOMContentLoaded', function () {
     splides.forEach(function (splideElement) {
         new Splide(splideElement, {
         perPage: 1,
-        gap: '16px',
         pagination: false,
         arrows: true,
-        //type: 'loop',
-        //autoplay: true,
-        //interval: 1000,
-        //speed: 500000,
         /*
         breakpoints: {
             1280: {
@@ -36,3 +31,14 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target);
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
