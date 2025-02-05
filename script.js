@@ -7,30 +7,11 @@ document.addEventListener('DOMContentLoaded', function () {
         perPage: 1,
         pagination: false,
         arrows: true,
-        /*
-        breakpoints: {
-            1280: {
-                perPage: 1,
-            },
-            
-            1023: {
-                perPage: 3,
-            },
-
-            767: {
-                perPage: 2,
-            },
-
-            480: {
-                perPage: 1
-            }
-        },
-        */
         }).mount();
     });
 });
 
-
+// == EFFECT ==
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
