@@ -462,28 +462,28 @@
   .intro-section .left .social-icons .social-link--margin-56 {
     margin: 0;
   }
-  .intro-section .left .social-icons .social-icon {
-    padding: 0.5rem !important;
+  .intro-section .left .social-icons .social-link .social-icon {
+    padding: 0.5rem;
   }
   .intro-section .right .right-container-padding .intro-text {
     padding-left: 1rem;
   }
   .intro-section .right .right-container-padding .text-block {
-    padding-left: 1rem !important;
+    padding-left: 1rem;
   }
 }
 @media screen and (max-width: 1023px) {
-  .trip-info {
-    width: unset !important;
+  .intro-section .left .trip-info {
+    width: unset;
   }
-  .trip-info .trip-duration {
-    width: unset !important;
+  .intro-section .left .trip-info .trip-duration {
+    width: unset;
   }
-  .text-block {
-    margin-bottom: 2.5rem !important;
+  .intro-section .right .right-container-padding .text-block {
+    margin-bottom: 2.5rem;
   }
-  .text-block .description {
-    margin-bottom: 0.9375rem !important;
+  .intro-section .right .right-container-padding .text-block .description {
+    margin-bottom: 0.9375rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -491,13 +491,13 @@
     padding: 1.875rem 2rem;
   }
   .intro-section .left .trip-info {
-    padding: 1rem !important;
+    padding: 1rem;
   }
-  .intro-section .right .intro-text {
+  .intro-section .right .right-container-padding .intro-text {
     padding-left: 1.25rem;
   }
-  .intro-section .right .text-block {
-    padding-left: 1.25rem !important;
+  .intro-section .right .right-container-padding .text-block {
+    padding-left: 1.25rem;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1059px) {
@@ -509,28 +509,28 @@
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
-  .right .text-block {
-    padding-left: 1.5625rem !important;
-    margin-bottom: 3.125rem !important;
+  .intro-section .right .right-container-padding .text-block {
+    padding-left: 1.5625rem;
+    margin-bottom: 3.125rem;
   }
-  .right .text-block .description {
-    margin-bottom: 1.5625rem !important;
+  .intro-section .right .right-container-padding .text-block .description {
+    margin-bottom: 1.5625rem;
   }
 }
 @media screen and (min-width: 1441px) and (max-width: 1919px) {
-  .text-block {
-    margin-bottom: 3.75rem !important;
+  .intro-section .right .right-container-padding .text-block {
+    margin-bottom: 3.75rem;
   }
-  .text-block .description {
-    margin-bottom: 1.875rem !important;
+  .intro-section .right .right-container-padding .text-block .description {
+    margin-bottom: 1.875rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1059px) {
-  .intro-img {
-    width: 80% !important;
+  .intro-section .left .intro-img-container .intro-img {
+    width: 80%;
   }
-  .social-icons {
-    left: 1.375rem !important;
+  .intro-section .left .social-icons {
+    left: 1.375rem;
   }
 }
 @media screen and (max-width: 1059px) {
@@ -549,6 +549,9 @@
   .intro-section .left .intro-img-container .intro-img {
     margin: 0;
   }
+  .intro-section .left .more-trips-desktop {
+    display: none;
+  }
   .intro-section .right {
     width: 100%;
   }
@@ -561,38 +564,35 @@
   .intro-section .right .right-container-padding .intro-text {
     margin: 0;
   }
-  .intro-section .more-trips-desktop {
-    display: none !important;
-  }
-  .intro-section .more-trips--mobile {
-    display: flex !important;
-    position: unset !important;
+  .intro-section .right .more-trips--mobile {
+    display: flex;
+    position: unset;
     margin-top: 1.875rem;
   }
 }
 @media screen and (min-width: 1059px) {
-  .more-trips--mobile {
-    display: none !important;
+  .intro-section .right .more-trips--mobile {
+    display: none;
   }
 }
 @media screen and (min-width: 1060px) and (max-width: 1279px) {
-  .left {
-    width: 60% !important;
+  .intro-section .left {
+    width: 60%;
   }
-  .right {
-    width: 40% !important;
+  .intro-section .right {
+    width: 40%;
   }
-  .right .right-container-padding {
-    padding-right: 4.375rem !important;
+  .intro-section .right .right-container-padding {
+    padding-right: 4.375rem;
   }
 }
 @media screen and (max-width: 1919px) {
-  .intro-text {
+  .intro-section .right .right-container-padding .intro-text {
     flex-direction: column;
-    align-items: flex-start !important;
+    align-items: flex-start;
   }
-  .intro-text h1 {
-    width: unset !important;
+  .intro-section .right .right-container-padding .intro-text h1 {
+    width: unset;
   }
 }
 *, *::before, *::after {

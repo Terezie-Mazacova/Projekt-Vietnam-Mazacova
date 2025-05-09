@@ -254,8 +254,10 @@
                 .social-link--margin-56 {
                     margin: 0;                    
                 }
-                .social-icon {
-                    padding: .5rem !important;
+                .social-link {
+                    .social-icon {
+                        padding: .5rem;
+                    }
                 }
             }
         }
@@ -268,7 +270,7 @@
                 }
     
                 .text-block {
-                    padding-left: 1rem !important;
+                    padding-left: 1rem;
                 }
             }
         }
@@ -276,23 +278,31 @@
 }
 
 @media screen and (max-width: 1023px) {
-    .trip-info {
-        width: unset !important;
+    .intro-section {
+        // == LEFT SIDE ==
+        .left {
+            .trip-info {
+                width: unset;
 
-        .trip-duration {
-            width: unset !important;
+                .trip-duration {
+                    width: unset;
+                }
+            }
+        }
+
+        // == RIGHT SIDE ==
+        .right {
+            .right-container-padding {
+                .text-block {
+                    margin-bottom: 2.5rem;
+            
+                    .description {
+                        margin-bottom: .9375rem;
+                    }
+                }
+            }
         }
     }
-    
-    // == RIGHT SIDE ==
-    .text-block {
-        margin-bottom: 2.5rem !important;
-
-        .description {
-            margin-bottom: .9375rem !important;
-        }
-    }
-    
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -302,18 +312,20 @@
         // == LEFT SIDE ==
         .left {
             .trip-info {
-                padding: 1rem !important;
+                padding: 1rem;
             }
         }
 
         // == RIGHT SIDE ==
         .right {
-            .intro-text {
-                padding-left: 1.25rem;
-            }
-
-            .text-block {
-                padding-left: 1.25rem !important;
+            .right-container-padding {
+                .intro-text {
+                    padding-left: 1.25rem;
+                }
+    
+                .text-block {
+                    padding-left: 1.25rem;
+                }
             }
         }
     }
@@ -332,39 +344,54 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
-    // == RIGHT SIDE ==
-    .right {
-        .text-block {
-            padding-left: 1.5625rem !important;
-            margin-bottom: 3.125rem !important;
-
-            .description {
-                margin-bottom: 1.5625rem !important;
+    .intro-section {
+        // == RIGHT SIDE ==
+        .right {
+            .right-container-padding{
+                .text-block {
+                    padding-left: 1.5625rem;
+                    margin-bottom: 3.125rem;
+        
+                    .description {
+                        margin-bottom: 1.5625rem;
+                    }
+                }
             }
         }
     }
 }
 
 @media screen and (min-width: 1441px) and (max-width: 1919px) {
-    // == RIGHT SIDE ==
-    .text-block {
-        margin-bottom: 3.75rem !important;
-
-        .description {
-            margin-bottom: 1.875rem !important;
+    .intro-section {
+        // == RIGHT SIDE ==
+        .right {
+            .right-container-padding {
+                .text-block {
+                    margin-bottom: 3.75rem;
+            
+                    .description {
+                        margin-bottom: 1.875rem;
+                    }
+                } 
+            }
         }
-    } 
-    
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1059px) {
-    // == LEFT SIDE ==
-    .intro-img {
-        width: 80% !important;
-    }
+    .intro-section{
+        // == LEFT SIDE ==
+        .left {
+            .intro-img-container {
+                .intro-img {
+                    width: 80%;
+                }
+            }
 
-    .social-icons {
-        left: 1.375rem !important;
+            .social-icons {
+                left: 1.375rem;
+            }
+        }
     }
 }
 @media screen and (max-width: 1059px) {
@@ -386,6 +413,9 @@
                 }
             }
             
+            .more-trips-desktop {
+                display: none;
+            }
         }
 
         // == RIGHT SIDE ==
@@ -403,52 +433,60 @@
                     margin: 0;
                 }
             }
-        }
 
-        .more-trips-desktop {
-            display: none !important;
-        }
-
-        .more-trips--mobile {
-            display: flex !important;
-            position: unset !important;
-            margin-top: 1.875rem;
+            .more-trips--mobile {
+                display: flex;
+                position: unset;
+                margin-top: 1.875rem;
+            }
         }
     }
 }
 
 
-
 @media screen and (min-width: 1059px) {
-    .more-trips--mobile {
-        display: none !important;
+    .intro-section {
+        // == RIGHT SIDE ==
+        .right {
+            .more-trips--mobile {
+                display: none;
+            }
+        }
     }
 }
 
 @media screen and (min-width: 1060px) and (max-width: 1279px) {
-    // == LEFT SIDE ==
-    .left {
-        width: 60% !important;
-    }
+    .intro-section {
+        // == LEFT SIDE ==
+        .left {
+            width: 60%;
+        }
 
-    // == RIGHT SIDE ==
-    .right {
-        width: 40% !important;
+        // == RIGHT SIDE ==
+        .right {
+            width: 40%;
 
-        .right-container-padding {
-            padding-right: 4.375rem !important;
+            .right-container-padding {
+                padding-right: 4.375rem;
+            }
         }
     }
 }
 
 @media screen and (max-width: 1919px) {
-    // ==  RIGHT SIDE ==
-    .intro-text {
-        flex-direction: column;
-        align-items: flex-start !important;
-
-        h1 {
-            width: unset !important;
+    .intro-section {
+        // ==  RIGHT SIDE ==
+        .right {
+            .right-container-padding {
+                .intro-text {
+                    flex-direction: column;
+                    align-items: flex-start;
+            
+                    h1 {
+                        width: unset;
+                    }
+                }
+            }
         }
     }
 }
